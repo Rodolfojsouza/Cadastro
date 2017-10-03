@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="cadastro.css">
+<title>Registro de fornecedor</title>
+	</head>
+<body>
+<h1>Registro de fornecedor</h1>
+<form id="form">
+<!-- DADOS DA EMPRESA-->
+<fieldset>
+ <legend>Dados da empresa</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="NomeFantasia">Nome fantasia: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="NomeFantasia" name="NomeFantasia" placeholder="insira nome da empresa">
+   </td>
+   <td>
+    <label for="RazaoSocial">Razão social: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="RazaoSocial" name="RazaoSocial" placeholder="insira a razão social" >
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="Email"> E-mail: </label>
+   </td>
+   <td  align="left">
+    <input type="email" id="Email" class="email" name="Email" placeholder="e-mail da empresa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="DadosTelefone">Telefone: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="DadosTelefone" class="phone_with_ddd" name="DadosTelefone"size="14" maxlength="11" placeholder="Tel. da empresa">
+   </td>
+  <tr>
+   <td>
+    <label for="InscricaoEstatual">Inscrição estatual: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="InscricaoEstatual" name="InscricaoEstatual" size="14" maxlength="13" placeholder="Inscrição Estadual"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="CNPJ">CNPJ:</label>
+   </td>
+   <td align="left">
+    <input type="text" id="CNPJ" class="cnpj" name="CNPJ" size="14" maxlength="14" placeholder="CNPJ">
+   </td>
+  <td>
+    <label for="Ramo">Ramo de atividade:</label>
+   </td>
+   <td align="left">
+    <input type="text" id="Ramo" name="Ramo" placeholder="Ramo de atividade">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+	
+<br />	
+<!-- CONTATO-->
+<fieldset>
+ <legend>Contato</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="nome" name="nome" placeholder="insira seu nome">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="sobrenome" name="sobrenome" placeholder="insira seu sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cargo">Cargo: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="cargo" name="cargo" placeholder="insira seu cargo">
+   </td>  	 
+  <tr>
+   <td>
+    <label for="telefone">Telefone de contato: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="telefone" class="phone_with_ddd" name="telefone" size="11" maxlength="11" placeholder="insira o telefone de contato"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label  for="ContatoEmail">E-mail: </label>
+   </td>
+   <td  align="left">
+    <input type="e-mail" id="ContatoEmail" class="email" name="ContatoEmail" placeholder="insira o e-mail de contato">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+	
+
+<br />
+<!-- ENDEREÇO -->
+<fieldset>
+ <legend>Dados de Endereço</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" id="rua" name="rua" placeholder="insira a rua da empresa">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" id="numero" name="numero" size="4" placeholder="nº">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="bairro" name="bairro" placeholder="bairro">
+   </td>
+	  <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td align="left">
+    <select id="estado" name="estado"> 
+	<option value=""disabled selected>SELECIONE</option> 
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" id="cep" class="cep" name="cep" size="8" maxlength="8" placeholder="CEP"> 
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br/>
+</form>
+<footer>
+Feito por Rodolfo Souza&copy;		
+</footer>
+<script type="text/javascript" src="jquery.js">
+</script>
+<script type="text/javascript" src="jquery.mask.min.js">
+</script>
+<script type="text/javascript" src="cadastro.js">
+</script>
+</body>
+</html>
+
+	

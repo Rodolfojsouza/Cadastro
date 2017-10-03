@@ -1,0 +1,23 @@
+
+	h1{ margin-bottom: 10px
+		
+	}
+	body{ margin: 0px;
+		  background-image:url(./background.jpg);
+		  background-size:cover;
+		  background-repeat:no-repeat;
+		  background-position:center center;
+	}
+	html,body{min-height:100%;
+		 font-family: sans-serif;
+	}
+	label,h1,legend,footer{color: white;
+	}
+	footer{ text-align: center;
+			background-color: black;
+			padding: 10px;
+	}
+.erro{ color: white;
+	   background-color: red;
+	   padding: 10px
+}
